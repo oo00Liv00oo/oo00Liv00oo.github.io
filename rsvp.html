@@ -3,7 +3,7 @@
 <title>RSVP</title>
 
 <link rel="stylesheet" type="text/css" href="style.css"/>
- <link type="text/css" rel="stylesheet" href="formcss.css"/>
+<link type="text/css" rel="stylesheet" href="formcss.css"/>
         
 <div class="rsvp">
 
@@ -23,10 +23,14 @@
    setTimeout(function() {
 JotForm.paymentExtrasOnTheFly([null,null,{"description":"","name":"greatNow","qid":"2","text":"Great! Now describe yourself a bit.","type":"control_radio"},{"description":"","name":"dontWorry3","qid":"3","text":"Don't worry, we'll organise a session \"Howling at the Moon\" at 11pm. Are there any other members in your wolfpack?","type":"control_radio"},{"description":"","name":"howMany4","qid":"4","text":"How many other colours are there in your rainbow?","type":"control_radio"},{"description":"","name":"howMany5","qid":"5","text":"How many wolves will be joining you?","type":"control_radio"},{"description":"","name":"whatAre","qid":"6","subLabel":"First name will do","text":"What are their names?","type":"control_textbox"},{"description":"","name":"age","qid":"7","subLabel":"Only for minors","text":"Age?","type":"control_number"},{"description":"","name":"tellHer","qid":"8","subLabel":"","text":"Tell her your name!","type":"control_textbox"},{"description":"","name":"whatIs","qid":"9","subLabel":"First name will do?","text":"What is his\u002Fher name?","type":"control_textbox"},{"description":"","name":"age10","qid":"10","subLabel":"Only for minors","text":"Age?","type":"control_number"},{"description":"","name":"areYou","qid":"11","text":"Are you joining us the 14th of September?","type":"control_radio"},{"description":"","name":"wantTo","qid":"12","subLabel":"","text":"Want to explain that answer?","type":"control_textarea"},{"name":"versturen13","qid":"13","text":"That won't be necessary","type":"control_button"},{"description":"","name":"input14","qid":"14","subLabel":"First name will do","text":"","type":"control_textbox"},{"description":"","name":"input15","qid":"15","subLabel":"Only for minors","text":"","type":"control_number"},{"description":"","name":"input16","qid":"16","subLabel":"First name will do","text":"","type":"control_textbox"},{"description":"","name":"input17","qid":"17","subLabel":"Only for minors","text":"","type":"control_number"},{"description":"","name":"input18","qid":"18","subLabel":"First name will do","text":"","type":"control_textbox"},{"description":"","name":"input19","qid":"19","subLabel":"Only for minors","text":"","type":"control_number"},{"description":"","name":"input20","qid":"20","subLabel":"First name will do","text":"","type":"control_textbox"},{"description":"","name":"input21","qid":"21","subLabel":"Only for minors","text":"","type":"control_number"},{"name":"versturen22","qid":"22","text":"Let's go!","type":"control_button"},{"description":"","name":"email","qid":"23","subLabel":"","text":"Email","type":"control_email"}]);}, 20); 
 </script>
+    
+    
 <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.11800" rel="stylesheet" type="text/css" />
 <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.11800" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.11800" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+    
+    
 <style type="text/css">
 @import '//fonts.googleapis.com/css?family=Miltonian:light,lightitalic,normal,italic,bold,bolditalic';
 
@@ -45,7 +49,15 @@ JotForm.paymentExtrasOnTheFly([null,null,{"description":"","name":"greatNow","qi
         color:#e1e0db !important;
         font-family:'Miltonian';
         font-size:24px;
+        background: transparent !important;
     }
+
+.form-all.form-input-wide-jf-required{
+background: transparent !important;
+    color: #e1e0db;
+}
+    
+    
 </style>
 
 <style type="text/css" id="form-designer-style">
@@ -108,9 +120,15 @@ JotForm.paymentExtrasOnTheFly([null,null,{"description":"","name":"greatNow","qi
 .supernova {
   background-color: transparent;
   background-color: transparent;
+ 
 }
 .supernova body {
   background-color: transparent;
+}
+    
+.supernova form-textbox{
+  background-color: transparent;
+    font-family: "Miltonian", sans-serif;
 }
 /*
 @width30: (unit(@formWidth, px) + 60px);
@@ -170,7 +188,6 @@ JotForm.paymentExtrasOnTheFly([null,null,{"description":"","name":"greatNow","qi
 .form-all {
   background-color: transparent;
   border: 1px solid transparent;
-    bottom: 40%;
 }
 .form-header-group {
   border-color: #e6e6e6;
@@ -342,6 +359,8 @@ h2 ~ .form-subHeader {
 .form-textarea {
   color: #e1e0db;
   padding: 4px 3px 2px 3px;
+    font-family: "Miltonian", sans-serif;
+    background: transparent;
 }
 .form-textbox,
 .form-textarea,
@@ -349,15 +368,25 @@ h2 ~ .form-subHeader {
 .form-checkbox-other-input,
 .form-captcha input,
 .form-spinner input {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
+    color: #e1e0db;
+    
 }
 [data-type="control_dropdown"] .form-input,
 [data-type="control_dropdown"] .form-input-wide {
   width: 150px;
+font-family: "Miltonian", sans-serif;
+    background: transparent;
 }
 .form-label {
   font-family: "Miltonian", sans-serif;
 }
+
+.form-input-wide
+{font-family: "Miltonian", sans-serif;
+    background: transparent;
+}
+    
 li[data-type="control_image"] div {
   text-align: left;
 }
@@ -520,6 +549,8 @@ li[data-type="control_image"] img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+      background: transparent;
+      color: #e1e0db;
   }
   .form-input,
   .form-input-wide,
@@ -527,6 +558,8 @@ li[data-type="control_image"] img {
   .form-textbox,
   .form-dropdown {
     max-width: initial!important;
+      background: transparent;
+      
   }
   .form-checkbox-item:not(#foo),
   .form-radio-item:not(#foo) {
@@ -541,6 +574,7 @@ li[data-type="control_image"] img {
   .form-address-table select,
   .form-input {
     width: 100%;
+      background: transparent;
   }
   div.form-header-group {
     padding: 24px 0px !important;
@@ -728,8 +762,8 @@ li[data-type="control_image"] img {
             *
           </span>
         </label>
-        <div id="cid_8" class="form-input-wide jf-required">
-          <input type="text" id="input_8" name="q8_tellHer" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" aria-labelledby="label_8" required="" />
+        <div id="cid_8" class="form-input-wide-jf-required">
+          <input type="text" id="input_8" name="q8_tellHer" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" aria-labelledby="label_8" required="" background="transparent" color="#e1e0db"/>
         </div>
       </li>
       <li class="form-line jf-required form-field-hidden" style="display:none;" data-type="control_radio" id="id_11">
@@ -1025,9 +1059,15 @@ li[data-type="control_image"] img {
   <script type="text/javascript">
   document.getElementById("si" + "mple" + "_spc").value = "91724803629361-91724803629361";
   </script>
+  <div class="formFooter-heightMask">
+  </div>
+ 
+   
 
 </form>
-<script type="text/javascript">JotForm.forwardToEu=true;</script> 
+<script type="text/javascript">JotForm.forwardToEu=true;</script>
+</div>
+
 
 
    
